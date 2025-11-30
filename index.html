@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairo E. Zapata V. | Portafolio de Desarrollo</title>
+    <!-- Carga de Tailwind CSS CDN para un estilo limpio y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración de la fuente Inter (default de Tailwind) y esquema de color B/N */
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #FFFFFF;
+            --color-text: #1f2937; /* Gris oscuro para texto principal */
+            --color-light-bg: #f3f4f6; /* Gris muy claro para secciones */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+        }
+        .header-section {
+            border-bottom: 2px solid var(--color-primary);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: var(--color-primary);
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Contenedor Principal Centrado -->
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header: Título Principal y Resumen -->
+        <header class="header-section pb-8 mb-8">
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight">
+                Dairo Estiven Zapata Valencia
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-700 mt-2 font-light">
+                Estudiante de Ingeniería en Sistemas & Entusiasta de la Programación
+            </p>
+        </header>
+
+        <!-- Sección: Sobre Mí -->
+        <section id="sobre-mi" class="mb-12">
+            <h2 class="section-title text-3xl">Sobre Mí</h2>
+            <div class="text-lg space-y-4">
+                <p>
+                    Tengo 20 años y resido en la hermosa ciudad de Pasto, Nariño, Colombia. Soy una persona inherentemente **proactiva**, impulsada por una constante sed de **aprendizaje y actualización**. Me entusiasma explorar nuevas herramientas y tecnologías que surgen en el panorama digital.
+                </p>
+                <p>
+                    Actualmente, mi enfoque está en la Ingeniería en Sistemas. Mis aspiraciones profesionales se centran en dos caminos: la **especialización en Seguridad Informática**, un área que me apasiona profundamente, o convertirme en un **Desarrollador Full Stack** altamente competente.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Formación Académica -->
+        <section id="formacion" class="mb-12">
+            <h2 class="section-title text-3xl">Formación Académica</h2>
+            <div class="space-y-6">
+                
+                <!-- Item: Ingeniería en Sistemas -->
+                <div class="p-4 rounded-md border border-gray-300 hover:border-gray-900 transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900">Ingeniería en Sistemas (Actual)</h3>
+                    <p class="text-gray-700 mt-1">
+                        Estudios en curso enfocados en el desarrollo de software, arquitectura de sistemas y fundamentos de la computación.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Pasto, Nariño, Colombia
+                    </p>
+                </div>
+
+                <!-- Item: Diplomado Python -->
+                <div class="p-4 rounded-md border border-gray-300 hover:border-gray-900 transition duration-300 bg-gray-50">
+                    <h3 class="text-xl font-semibold text-gray-900">Diplomado en el Lenguaje de Python</h3>
+                    <p class="text-gray-700 mt-1">
+                        Adquisición de habilidades fundamentales en programación, lógica y aplicación del lenguaje Python.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Certificado obtenido
+                    </p>
+                </div>
+
+                <!-- Item: Técnico y Bachiller -->
+                <div class="p-4 rounded-md border border-gray-300 hover:border-gray-900 transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900">Técnico en Mantenimiento en Equipos de Cómputo</h3>
+                    <p class="text-gray-700 mt-1">
+                        Servicio Nacional de Aprendizaje (SENA). Conocimiento práctico en hardware, diagnóstico y reparación de equipos.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Bachiller Comercial
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Habilidades e Intereses Clave -->
+        <section id="intereses" class="mb-12">
+            <h2 class="section-title text-3xl">Habilidades e Intereses Clave</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-gray-900 text-white rounded-full text-sm font-medium">Programación Python</span>
+                <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm font-medium border border-gray-400">Proactividad y Autoaprendizaje</span>
+                <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm font-medium border border-gray-400">Mantenimiento de Hardware/Software</span>
+                <span class="px-3 py-1 bg-gray-900 text-white rounded-full text-sm font-medium">Interés: Ciberseguridad / InfoSec</span>
+                <span class="px-3 py-1 bg-gray-900 text-white rounded-full text-sm font-medium">Meta: Desarrollo Full Stack</span>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos (Placeholder) -->
+        <section id="proyectos" class="mb-12 p-6 bg-gray-100 rounded-lg border-2 border-dashed border-gray-400">
+            <h2 class="section-title text-3xl">Proyectos</h2>
+            <div class="text-lg text-gray-600">
+                <p>
+                    Actualmente, este es mi primer portafolio y estoy centrado en consolidar mi base de conocimientos en Ingeniería en Sistemas.
+                </p>
+                <p class="mt-2 font-medium">
+                    **Próximamente:** ¡Esta sección se actualizará con mis primeros proyectos personales en Python, web o seguridad a medida que avance en mi carrera!
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-sm">
+                &copy; <span id="current-year"></span> Dairo Estiven Zapata Valencia.
+            </p>
+            <p class="text-xs mt-1 text-gray-400">
+                Diseño minimalista Black & White.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Pequeño script para asegurar que el año del copyright esté actualizado
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
